@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="sprint-12-Data-Table-Creation" />
+        <module name="spring-10-Thymeleaf-Module" />
+        <module name="spring-03-Wiring" />
+        <module name="spring-00-Coupling" />
+        <module name="spring-05-Core-Abstraction" />
+        <module name="spring-09-MVC-Model" />
+        <module name="spring-02-Core-IoC-Stereotype-Annotation" />
+        <module name="spring-01-Core-Ioc-Bean-Annotation" />
+        <module name="spring-04-Autowiring" />
+        <module name="spring-06-Core-BeanScope" />
+        <module name="spring-07-SpringBoot-Demo" />
+        <module name="spring-11-Thymeleaf-Http" />
+        <module name="spring-09-MVC-Controller" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="demo" target="21" />
+      <module name="recipe-sharing" target="21" />
+      <module name="spring-08-Recipe-Sharing" target="21" />
+      <module name="spring-09-Thymeleaf-Module" target="21" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="demo" options="-parameters" />
+      <module name="recipe-sharing" options="-parameters" />
+      <module name="spring-07-SpringBoot-Demo" options="-parameters" />
+      <module name="spring-08-Recipe-Sharing" options="-parameters" />
+      <module name="spring-09-MVC-Controller" options="-parameters" />
+      <module name="spring-09-MVC-Model" options="-parameters" />
+      <module name="spring-09-Thymeleaf-Module" options="-parameters" />
+      <module name="spring-10-Thymeleaf-Module" options="-parameters" />
+      <module name="spring-11-Thymeleaf-Http" options="-parameters" />
+      <module name="sprint-12-Data-Table-Creation" options="-parameters" />
+    </option>
+  </component>
+</project>

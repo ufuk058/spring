@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Student List</title>
+</head>
+<body>
+<table th:if="${students.size() > 15}">
+    <thead>
+    <tr>
+        <td> Student Id</td>
+        <td> First Name</td>
+        <td> Last Name</td>
+        <td> Age </td>
+        <td> State </td>
+        <td>Scholarship</td>
+    </tr>
+    </thead >
+    <tbody>
+        <tr th:each="student : ${students}">
+            <td th:text="${student.id}"></td>
+            <td th:text="${student.firstName}"></td>
+            <td th:text="${student.lastName}"></td>
+            <td th:text="${student.age}"></td>
+            <td th:text="${student.state}"></td>
+            <td th:text="${student.age >25 ? 'Eligible' : 'Not Eligible'}"></td>
+
+    </tr>
+    </tbody>
+</table>
+<div>
+    <span th:if="${students.get(0).state == 'Virgina'}">Virgina</span>
+    <span th:unless="${students.get(0).state =='Virgina'}">Not Virgina</span>
+</div>
+
+        <!--Fragments -->
+<div th:replace="/fragments/index :: footer-menu"></div>
+<div th:replace="/fragments/index :: main-menu"></div>
+
+</body>
+</html>

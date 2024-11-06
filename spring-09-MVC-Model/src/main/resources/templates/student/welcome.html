@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Page</title>
+</head>
+<body>
+<h1 th:text="${name}">  </h1>
+<h2 th:text="${course}"></h2>
+<h1 th:text="'Welcome ' +${studentName}"></h1>
+<h1 th:text="'Your Student id is: '+${studentId}"></h1>
+<h1 th:text="'Your class levels are: '+${numbers}"></h1>
+<h1 th:text="'Your classmates  are: '+ ${classmates} +' and you '+${studentName}"></h1>
+<h1 th:text="'Your best friend is: '+${classmates.get(2)}"></h1>
+<h1 th:text="'Student information: '+${student}"></h1>
+<h1 th:text="'Student Id: '+ ${student.id}"></h1>
+<h1 th:text="'Student name: '+${student.firstName}"></h1>
+<h1 th:text="'Student surname: '+${student.lastName}"></h1>
+
+</body>
+</html>

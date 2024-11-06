@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Register Page</title>
+</head>
+<body>
+<!-- displaying the value -->
+<h1 th:text="'Student List: '+${studentList.get(0)}"></h1>
+
+<!--Concatenation -->
+
+<h1 th:text="'Hello '+${studentList.get(0).firstName}"></h1>
+
+<!-- Link -->
+<h2>
+<a th:href="@{https://cydeo.com}">Cydeo Website</a>
+</h2>
+<!-- Relative Link -->
+<h2>
+    <a th:href="@{/student/welcome}">Welcome Page</a>
+</h2>
+<h2>
+    <a th:href="@{/student/welcome(name=${studentList.get(0).firstName})}"> WelcomePage with id</a>
+</h2>
+
+<h2>  Printing Students' first name</h2>
+<ul>
+    <li th:each="student:${studentList}" th:text="${student.firstName}">
+
+    </li>
+</ul>
+
+<h2>  Printing Students' Last Name</h2>
+<ul>
+    <li th:each="student:${studentList}" th:text="${student.lastName}">
+
+    </li>
+</ul>
+</body>
+</html>
