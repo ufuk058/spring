@@ -1,6 +1,6 @@
 package com.dbCon.entity;
 
-import com.dbCon.Gender;
+import com.dbCon.enums.Gender;
 import jakarta.persistence.*;
 
 import java.time.LocalDate;

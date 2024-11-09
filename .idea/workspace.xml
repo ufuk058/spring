@@ -5,11 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4c218e48-f77e-46a0-98d4-a6ae7a88baff" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/sprint-12-Data-Table-Creation/src/main/java/com/dbCon/entity/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sprint-12-Data-Table-Creation/src/main/java/com/dbCon/entity/CreditAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sprint-12-Data-Table-Creation/src/main/java/com/dbCon/entity/DebitAccount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sprint-12-Data-Table-Creation/src/main/java/com/dbCon/bootstrap/DataGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sprint-12-Data-Table-Creation/src/main/java/com/dbCon/entity/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sprint-12-Data-Table-Creation/src/main/java/com/dbCon/repository/CarRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-12-Data-Table-Creation/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-12-Data-Table-Creation/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-12-Data-Table-Creation/src/main/java/com/dbCon/Gender.java" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-12-Data-Table-Creation/src/main/java/com/dbCon/enums/Gender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-12-Data-Table-Creation/src/main/java/com/dbCon/entity/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-12-Data-Table-Creation/src/main/java/com/dbCon/entity/Student.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,9 +20,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="HTML File" />
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -67,7 +68,7 @@
     "Application.Sprint12DataTableCreationApplication.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "mapped",
+    "git-widget-placeholder": "repo",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/ufuksahinduran/Desktop/JavaDev/spring-m01-spring-core"
   }
@@ -142,7 +143,7 @@
       <module name="sprint-12-Data-Table-Creation" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.dbCon.*" />
+          <option name="PATTERN" value="com.dbCon.enums.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -182,6 +183,27 @@
       <option name="presentableId" value="Default" />
       <updated>1727743500296</updated>
     </task>
+    <task id="LOCAL-00001" summary="@MappedSuperClass annotation added to create subclass tables">
+      <option name="closed" value="true" />
+      <created>1731179064224</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1731179064224</updated>
+    </task>
+    <task id="LOCAL-00002" summary="@MappedSuperClass annotation added to create subclass tables">
+      <option name="closed" value="true" />
+      <created>1731179080041</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1731179080041</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="@MappedSuperClass annotation added to create subclass tables" />
+    <option name="LAST_COMMIT_MESSAGE" value="@MappedSuperClass annotation added to create subclass tables" />
   </component>
 </project>

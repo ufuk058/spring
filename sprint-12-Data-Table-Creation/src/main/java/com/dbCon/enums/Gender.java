@@ -1,4 +1,4 @@
-package com.dbCon;
+package com.dbCon.enums;
 
 public enum Gender {
 
