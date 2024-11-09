@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4c218e48-f77e-46a0-98d4-a6ae7a88baff" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sprint-12-Data-Table-Creation/src/main/java/com/dbCon/entity/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sprint-12-Data-Table-Creation/src/main/java/com/dbCon/entity/CreditAccount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sprint-12-Data-Table-Creation/src/main/java/com/dbCon/entity/DebitAccount.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sprint-12-Data-Table-Creation/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-12-Data-Table-Creation/src/main/resources/application.properties" afterDir="false" />
     </list>
@@ -65,7 +67,7 @@
     "Application.Sprint12DataTableCreationApplication.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "database",
+    "git-widget-placeholder": "mapped",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/ufuksahinduran/Desktop/JavaDev/spring-m01-spring-core"
   }
