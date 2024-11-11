@@ -44,6 +44,17 @@ public class DataGenerator implements CommandLineRunner {
 
         paymentRepository.saveAll(paymentList);
 
+        System.out.println( paymentRepository.findById(2L).get().getAmount());
+        System.out.println(paymentRepository.findById(2L).get().getPaymentDetail().getCommissionAmount());
+
+        //Based on the following statement in Payment class --> @OneToOne (cascade = CascadeType.ALL)
+        //We can do any Cascade action which also includes Remove like below
+        paymentRepository.delete(p1);
+        //If I use @OneToOne(cascade = {CascadeType.PERSIST,CascadeType.MERGE}) it deletes the record from
+        // Payments table only not PaymentDetails
+
+        // paymentRepository.delete(p1); --> This statement calling is Hard Delete and None of the company use it,
+        // so none of the records deletes permanently. Use soft delete only
 
     }
 }
