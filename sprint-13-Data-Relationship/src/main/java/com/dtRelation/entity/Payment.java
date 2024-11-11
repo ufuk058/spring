@@ -39,5 +39,7 @@ public class Payment {
     private PaymentDetail paymentDetail;
 
 
+    @ManyToOne
+    private Merchant merchant;
 
 }

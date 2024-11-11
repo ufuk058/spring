@@ -1,8 +1,10 @@
 package com.dtRelation.bootstrap;
 
+import com.dtRelation.entity.Merchant;
 import com.dtRelation.entity.Payment;
 import com.dtRelation.entity.PaymentDetail;
 import com.dtRelation.enums.Status;
+import com.dtRelation.repository.MerchantRepository;
 import com.dtRelation.repository.PaymentRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
@@ -17,11 +19,13 @@ import java.util.List;
 public class DataGenerator implements CommandLineRunner {
 
     private final PaymentRepository paymentRepository;
+    private final MerchantRepository merchantRepository;
 
 
-    public DataGenerator(PaymentRepository paymentRepository) {
+    public DataGenerator(PaymentRepository paymentRepository, MerchantRepository merchantRepository) {
         this.paymentRepository = paymentRepository;
 
+        this.merchantRepository = merchantRepository;
     }
 
     @Override
@@ -41,7 +45,13 @@ public class DataGenerator implements CommandLineRunner {
 
         paymentList.addAll(Arrays.asList(p1,p2));
 
+        Merchant m1= new Merchant("Amazon","M123",new BigDecimal("0.25"),new BigDecimal("3.25"),5);
 
+        p1.setMerchant(m1);
+        p2.setMerchant(m1);
+
+        //Save merchant to merchant repo
+        merchantRepository.save(m1);
         paymentRepository.saveAll(paymentList);
 
         System.out.println( paymentRepository.findById(2L).get().getAmount());
@@ -49,7 +59,7 @@ public class DataGenerator implements CommandLineRunner {
 
         //Based on the following statement in Payment class --> @OneToOne (cascade = CascadeType.ALL)
         //We can do any Cascade action which also includes Remove like below
-        paymentRepository.delete(p1);
+        //paymentRepository.delete(p1);
         //If I use @OneToOne(cascade = {CascadeType.PERSIST,CascadeType.MERGE}) it deletes the record from
         // Payments table only not PaymentDetails
 

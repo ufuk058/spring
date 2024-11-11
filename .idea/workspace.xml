@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4c218e48-f77e-46a0-98d4-a6ae7a88baff" name="Changes" comment="Payment Repo added">
+      <change afterPath="$PROJECT_DIR$/sprint-13-Data-Relationship/src/main/java/com/dtRelation/entity/Merchant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sprint-13-Data-Relationship/src/main/java/com/dtRelation/repository/MerchantRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sprint-13-Data-Relationship/src/main/java/com/dtRelation/bootstrap/DataGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-13-Data-Relationship/src/main/java/com/dtRelation/bootstrap/DataGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sprint-13-Data-Relationship/src/main/java/com/dtRelation/entity/Payment.java" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-13-Data-Relationship/src/main/java/com/dtRelation/entity/Payment.java" afterDir="false" />
@@ -67,7 +69,7 @@
     "Application.Sprint13DataRelationshipApplication.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "cascading",
+    "git-widget-placeholder": "oneToMany",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/ufuksahinduran/Desktop/JavaDev/spring-m01-spring-core",
     "settings.editor.selected.configurable": "project.propVCSSupport.Confirmation"
