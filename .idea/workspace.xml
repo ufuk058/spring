@@ -5,12 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4c218e48-f77e-46a0-98d4-a6ae7a88baff" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/sprint-12-Data-Table-Creation/src/main/java/com/dbCon/bootstrap/DataGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sprint-12-Data-Table-Creation/src/main/java/com/dbCon/entity/Car.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sprint-12-Data-Table-Creation/src/main/java/com/dbCon/repository/CarRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sprint-12-Data-Table-Creation/src/main/java/com/dbCon/entity/BaseEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sprint-12-Data-Table-Creation/src/main/java/com/dbCon/entity/Department.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sprint-12-Data-Table-Creation/src/main/java/com/dbCon/entity/Employee1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sprint-12-Data-Table-Creation/src/main/java/com/dbCon/repository/DepartmentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sprint-12-Data-Table-Creation/src/main/java/com/dbCon/repository/EmployeeRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-12-Data-Table-Creation/src/main/java/com/dbCon/Gender.java" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-12-Data-Table-Creation/src/main/java/com/dbCon/enums/Gender.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint-12-Data-Table-Creation/src/main/java/com/dbCon/entity/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-12-Data-Table-Creation/src/main/java/com/dbCon/entity/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-12-Data-Table-Creation/src/main/java/com/dbCon/bootstrap/DataGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-12-Data-Table-Creation/src/main/java/com/dbCon/bootstrap/DataGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-12-Data-Table-Creation/src/main/java/com/dbCon/entity/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-12-Data-Table-Creation/src/main/java/com/dbCon/entity/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-12-Data-Table-Creation/src/main/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-12-Data-Table-Creation/src/main/resources/data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint-12-Data-Table-Creation/src/main/resources/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sprint-12-Data-Table-Creation/src/main/resources/schema.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +72,7 @@
     "Application.Sprint12DataTableCreationApplication.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "repo",
+    "git-widget-placeholder": "task",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/ufuksahinduran/Desktop/JavaDev/spring-m01-spring-core"
   }

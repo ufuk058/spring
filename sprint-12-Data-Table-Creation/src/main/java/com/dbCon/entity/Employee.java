@@ -1,16 +1,26 @@
 package com.dbCon.entity;
 
+import com.dbCon.enums.Gender;
 import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
-import java.util.UUID;
+import java.time.LocalDate;
 
 @Entity
-public class Employee {
+@NoArgsConstructor
+@AllArgsConstructor
+@Data
+@Table(name= "Employees")
+public class Employee  extends BaseEntity {
 
-    @Id      //this annotation refers the field is primary key
-    private Long id;
-    private String name;
-
+    private String firstName;
+    private String lastName;
+    private String email;
+    private LocalDate hireDate;
+    private Gender gender;
+    private Double salary;
 
 }
