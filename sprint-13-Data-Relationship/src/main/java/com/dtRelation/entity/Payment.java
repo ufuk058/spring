@@ -32,9 +32,10 @@ public class Payment {
     @Enumerated(EnumType.STRING)
     private Status paymentStatus;
 
-    @OneToOne (cascade = CascadeType.ALL)//This annotation creates relation between Payment and PaymentDetail and accept id as foreign key
+    //@OneToOne (cascade = CascadeType.ALL)//This annotation creates relation between Payment and PaymentDetail and accept id as foreign key
     //and creates foreign id as payment_detail_id
     // @JoinColumn(name="myForeignKey") //This annotation provides to custom name of the foreign key
+    @OneToOne(cascade = {CascadeType.PERSIST,CascadeType.MERGE})
     private PaymentDetail paymentDetail;
 
 
