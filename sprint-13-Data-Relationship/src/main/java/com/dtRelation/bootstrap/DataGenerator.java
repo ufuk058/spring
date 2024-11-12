@@ -1,9 +1,9 @@
 package com.dtRelation.bootstrap;
 
-import com.dtRelation.entity.Merchant;
-import com.dtRelation.entity.Payment;
-import com.dtRelation.entity.PaymentDetail;
+import com.dtRelation.entity.*;
 import com.dtRelation.enums.Status;
+import com.dtRelation.repository.CartRepository;
+import com.dtRelation.repository.ItemRepository;
 import com.dtRelation.repository.MerchantRepository;
 import com.dtRelation.repository.PaymentRepository;
 import org.springframework.boot.CommandLineRunner;
@@ -20,12 +20,16 @@ public class DataGenerator implements CommandLineRunner {
 
     private final PaymentRepository paymentRepository;
     private final MerchantRepository merchantRepository;
+    private final ItemRepository itemRepository;
+    private final CartRepository cartRepository;
 
 
-    public DataGenerator(PaymentRepository paymentRepository, MerchantRepository merchantRepository) {
+    public DataGenerator(PaymentRepository paymentRepository, MerchantRepository merchantRepository, ItemRepository itemRepository, CartRepository cartRepository) {
         this.paymentRepository = paymentRepository;
 
         this.merchantRepository = merchantRepository;
+        this.itemRepository = itemRepository;
+        this.cartRepository = cartRepository;
     }
 
     @Override
@@ -49,6 +53,21 @@ public class DataGenerator implements CommandLineRunner {
 
         p1.setMerchant(m1);
         p2.setMerchant(m1);
+        Item item1= new Item("Milk","M01");
+        Item item2= new Item("Sugar","S01");
+        Item item3= new Item("Bread","B01");
+
+        Cart cart1= new Cart();
+        Cart cart2= new Cart();
+
+        cart1.setItemList(Arrays.asList(item1,item2,item3));
+        cart2.setItemList(Arrays.asList(item1,item2));
+        itemRepository.save(item1);
+        itemRepository.save(item2);
+        itemRepository.save(item3);
+
+        cartRepository.save(cart1);
+        cartRepository.save(cart2);
 
         //Save merchant to merchant repo
         merchantRepository.save(m1);
