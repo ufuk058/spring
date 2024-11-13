@@ -8,11 +8,11 @@
 		<version>3.3.5</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.dbCon</groupId>
-	<artifactId>sprint-12-Data-Table-Creation</artifactId>
+	<groupId>com.dtRelation</groupId>
+	<artifactId>spring-13-Data-Relationship</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>sprint-12-Data-Table-Creation</name>
-	<description>Spring Boot - Database Connection</description>
+	<name>sprint-13-Data-Relationship</name>
+	<description>Spring Boot - Data Relationship</description>
 	<url/>
 	<licenses>
 		<license/>
@@ -34,16 +34,7 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
-		</dependency>
 
-		<dependency>
-			<groupId>com.h2database</groupId>
-			<artifactId>h2</artifactId>
-			<scope>runtime</scope>
-		</dependency>
 		<dependency>
 			<groupId>org.postgresql</groupId>
 			<artifactId>postgresql</artifactId>
