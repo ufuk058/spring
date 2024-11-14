@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c218e48-f77e-46a0-98d4-a6ae7a88baff" name="Changes" comment="Data Queries modified">
+    <list default="true" id="4c218e48-f77e-46a0-98d4-a6ae7a88baff" name="Changes" comment="Properties added to application.properties file">
+      <change afterPath="$PROJECT_DIR$/spring-14-Data-Queries/src/main/java/com/query/QueryDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-14-Data-Queries/src/main/java/com/query/entity/BaseEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-14-Data-Queries/src/main/java/com/query/entity/Department.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-14-Data-Queries/src/main/java/com/query/entity/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-14-Data-Queries/src/main/java/com/query/entity/Region.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-14-Data-Queries/src/main/java/com/query/enums/Gender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-14-Data-Queries/src/main/java/com/query/repository/RegionRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-14-Data-Queries/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring-14-Data-Queries/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -61,6 +69,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Spring11ThymeleafHttpApplication.executor": "Run",
+    "Application.Spring14DataQueriesApplication.executor": "Run",
     "Application.Sprint12DataTableCreationApplication.executor": "Run",
     "Application.Sprint13DataRelationshipApplication.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -83,20 +92,7 @@
       <recent name="com.modelMVC" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Sprint13DataRelationshipApplication">
-    <configuration name="Spring09MvcModelApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.modelMVC.Spring09MvcModelApplication" />
-      <module name="spring-09-MVC-Model" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.modelMVC.config.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.Spring14DataQueriesApplication">
     <configuration name="Spring10ThymeleafModuleApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.thymeleaf.Spring10ThymeleafModuleApplication" />
       <module name="spring-10-Thymeleaf-Module" />
@@ -116,6 +112,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.thymeleafHttp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Spring14DataQueriesApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.query.Spring14DataQueriesApplication" />
+      <module name="spring-14-Data-Queries" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.query.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -149,26 +158,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StudentController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.thymeleaf.controller.StudentController" />
-      <module name="spring-10-Thymeleaf-Module" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.thymeleaf.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Spring14DataQueriesApplication" />
         <item itemvalue="Application.Sprint13DataRelationshipApplication" />
         <item itemvalue="Application.Sprint12DataTableCreationApplication" />
         <item itemvalue="Application.Spring11ThymeleafHttpApplication" />
         <item itemvalue="Application.Spring10ThymeleafModuleApplication" />
-        <item itemvalue="Application.StudentController" />
       </list>
     </recent_temporary>
   </component>
@@ -237,7 +233,23 @@
       <option name="project" value="LOCAL" />
       <updated>1731509065566</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Properties added to application.properties file">
+      <option name="closed" value="true" />
+      <created>1731617314851</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1731617314851</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Properties added to application.properties file">
+      <option name="closed" value="true" />
+      <created>1731618002916</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1731618002916</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -247,6 +259,7 @@
     <MESSAGE value="Multiple(many) payments saved to one Merchant" />
     <MESSAGE value="Data Queries module added and package names corrected" />
     <MESSAGE value="Data Queries modified" />
-    <option name="LAST_COMMIT_MESSAGE" value="Data Queries modified" />
+    <MESSAGE value="Properties added to application.properties file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Properties added to application.properties file" />
   </component>
 </project>
