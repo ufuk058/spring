@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c218e48-f77e-46a0-98d4-a6ae7a88baff" name="Changes" comment="ManyToMany Cart and Item  relation example added">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="4c218e48-f77e-46a0-98d4-a6ae7a88baff" name="Changes" comment="Data Queries module added and package names corrected" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -65,7 +63,7 @@
     "Application.Sprint13DataRelationshipApplication.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "dataquery",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/ufuksahinduran/Desktop/JavaDev/spring-m01-spring-core",
     "settings.editor.selected.configurable": "project.propVCSSupport.Confirmation"
@@ -125,7 +123,7 @@
     </configuration>
     <configuration name="Sprint12DataTableCreationApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.dbCon.Sprint12DataTableCreationApplication" />
-      <module name="sprint-12-Data-Table-Creation" />
+      <module name="spring-12-Data-Table-Creation" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.dbCon.enums.*" />
@@ -138,7 +136,7 @@
     </configuration>
     <configuration name="Sprint13DataRelationshipApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.dtRelation.Sprint13DataRelationshipApplication" />
-      <module name="sprint-13-Data-Relationship" />
+      <module name="spring-13-Data-Relationship" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.dtRelation.*" />
@@ -221,7 +219,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731369438116</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Data Queries module added and package names corrected">
+      <option name="closed" value="true" />
+      <created>1731508628539</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1731508628539</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -229,6 +235,7 @@
     <MESSAGE value="Employee and Department table added with data to database" />
     <MESSAGE value="Payment Repo added" />
     <MESSAGE value="Multiple(many) payments saved to one Merchant" />
-    <option name="LAST_COMMIT_MESSAGE" value="Multiple(many) payments saved to one Merchant" />
+    <MESSAGE value="Data Queries module added and package names corrected" />
+    <option name="LAST_COMMIT_MESSAGE" value="Data Queries module added and package names corrected" />
   </component>
 </project>
