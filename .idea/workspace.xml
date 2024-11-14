@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c218e48-f77e-46a0-98d4-a6ae7a88baff" name="Changes" comment="Data Queries module added and package names corrected" />
+    <list default="true" id="4c218e48-f77e-46a0-98d4-a6ae7a88baff" name="Changes" comment="Data Queries modified">
+      <change beforePath="$PROJECT_DIR$/spring-14-Data-Queries/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring-14-Data-Queries/src/main/resources/application.properties" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -227,7 +229,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731508628539</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Data Queries modified">
+      <option name="closed" value="true" />
+      <created>1731509065566</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1731509065566</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -236,6 +246,7 @@
     <MESSAGE value="Payment Repo added" />
     <MESSAGE value="Multiple(many) payments saved to one Merchant" />
     <MESSAGE value="Data Queries module added and package names corrected" />
-    <option name="LAST_COMMIT_MESSAGE" value="Data Queries module added and package names corrected" />
+    <MESSAGE value="Data Queries modified" />
+    <option name="LAST_COMMIT_MESSAGE" value="Data Queries modified" />
   </component>
 </project>
