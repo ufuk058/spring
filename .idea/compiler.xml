@@ -29,6 +29,8 @@
       <module name="recipe-sharing" target="21" />
       <module name="spring-08-Recipe-Sharing" target="21" />
       <module name="spring-09-Thymeleaf-Module" target="21" />
+      <module name="sprint-12-Data-Table-Creation" target="21" />
+      <module name="sprint-13-Data-Relationship" target="21" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
