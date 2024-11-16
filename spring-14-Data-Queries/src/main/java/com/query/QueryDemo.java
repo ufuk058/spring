@@ -53,26 +53,32 @@ public class QueryDemo implements CommandLineRunner {
 //        System.out.println("Top 2 Divisions, name contains 'Hea' and not duplicate"+departmentRepository.findDistinctTop2ByDivisionContains("Hea"));
 //        System.out.println("\n\n");
 
-        System.out.println("######## EMPLOYEE ########");
-        System.out.println(" Jack Names : "+employeeRepository.findByFirstNameContains("Jack"));
-        System.out.println("FirstAndLastName: "+employeeRepository.findByFirstNameAndLastName("Jania", "Gresly"));
-        System.out.println("\n\n");
-        System.out.println("FirstAndLastName: "+employeeRepository.findByFirstNameOrLastName("Jania", "Gresly"));
-        System.out.println("\n\n");
-        System.out.println("Salary More than 166700 " + employeeRepository.findBySalaryGreaterThan(166700));
-        System.out.println("\n\n");
-        System.out.println("How many people makes salary more than 150000: "+ employeeRepository.countBySalaryGreaterThan(150000));
-        System.out.println("\n\n");
-        System.out.println("Employees with salary equals and Greater Than 50000: " + employeeRepository.findBySalaryGreaterThanEqualOrderBySalaryDesc(50000));
-        System.out.println("\n\n");
-        System.out.println("Top3 makes less than 100000 " + employeeRepository.findDistinctTop3BySalaryLessThan(100000));
-        System.out.println("\n\n");
-        System.out.println("Employees email is null: " + employeeRepository.findByEmailIsNull());
-        System.out.println("\n\n");
-        System.out.println("Employee Count of null email: "+ employeeRepository.countByEmailIsNull());
+//        System.out.println("######## EMPLOYEE ########");
+//        System.out.println(" Jack Names : "+employeeRepository.findByFirstNameContains("Jack"));
+//        System.out.println("FirstAndLastName: "+employeeRepository.findByFirstNameAndLastName("Jania", "Gresly"));
+//        System.out.println("\n\n");
+//        System.out.println("FirstAndLastName: "+employeeRepository.findByFirstNameOrLastName("Jania", "Gresly"));
+//        System.out.println("\n\n");
+//        System.out.println("Salary More than 166700 " + employeeRepository.findBySalaryGreaterThan(166700));
+//        System.out.println("\n\n");
+//        System.out.println("How many people makes salary more than 150000: "+ employeeRepository.countBySalaryGreaterThan(150000));
+//        System.out.println("\n\n");
+//        System.out.println("Employees with salary equals and Greater Than 50000: " + employeeRepository.findBySalaryGreaterThanEqualOrderBySalaryDesc(50000));
+//        System.out.println("\n\n");
+//        System.out.println("Top3 makes less than 100000 " + employeeRepository.findDistinctTop3BySalaryLessThan(100000));
+//        System.out.println("\n\n");
+//        System.out.println("Employees email is null: " + employeeRepository.findByEmailIsNull());
+//        System.out.println("\n\n");
+//        System.out.println("Employee Count of null email: "+ employeeRepository.countByEmailIsNull());
 
 
         System.out.println("#### JOINS ######");
+
+//        System.out.println("All Employees working in Health division: "+ employeeRepository.findByDepartmentDivision("Health"));
+//        System.out.println("\n\n");
+//        System.out.println("Employees from Canada: "+ employeeRepository.findByRegionCountry("Canada"));
+//        System.out.println("Based on Region Name 'Northeast': "+ employeeRepository.findByRegionRegion("Northeast"));
+        System.out.println("Number of Employee working from Canada: "+ employeeRepository.countByRegionCountry("United States"));
 
         System.out.println("\n\n\n\n");
     }
