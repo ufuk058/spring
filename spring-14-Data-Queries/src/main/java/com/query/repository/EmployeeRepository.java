@@ -52,6 +52,18 @@ public interface EmployeeRepository extends JpaRepository<Employee, Integer> {
 
     //--------------- Joins -----------------------
 
+    //Display all employees who are working in Division "Health"
+    List<Employee> findByDepartmentDivision(String division);  //Department is the object name in the Employee Table
+
+    //Display all Employees who are working in Country Canada
+    List<Employee> findByRegionCountry(String country);  //Region is the object name that created in the Employee Table
+
+    // Display All Employees where the region is "Northeast"
+    List<Employee> findByRegionRegion(String regionName); //First Region is Object Second Region is Field in the object
+
+    //Display count of Employees Working from Canada
+    Integer countByRegionCountry(String country);
+
 
 
 
