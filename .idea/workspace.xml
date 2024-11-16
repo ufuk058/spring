@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4c218e48-f77e-46a0-98d4-a6ae7a88baff" name="Changes" comment="Properties added to application.properties file">
-      <change afterPath="$PROJECT_DIR$/spring-14-Data-Queries/src/main/java/com/query/repository/DepartmentRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-14-Data-Queries/src/main/java/com/query/repository/EmployeeRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-14-Data-Queries/src/main/java/com/query/QueryDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-14-Data-Queries/src/main/java/com/query/QueryDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-14-Data-Queries/src/main/java/com/query/repository/RegionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-14-Data-Queries/src/main/java/com/query/repository/RegionRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +68,7 @@
     "Application.Sprint13DataRelationshipApplication.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "runquery",
+    "git-widget-placeholder": "employee",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/ufuksahinduran/Desktop/JavaDev/spring-m01-spring-core",
     "settings.editor.selected.configurable": "project.propVCSSupport.Confirmation"
@@ -245,7 +243,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731618002916</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Query methods added for Department and Region">
+      <option name="closed" value="true" />
+      <created>1731626158617</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1731626158617</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -256,6 +262,7 @@
     <MESSAGE value="Data Queries module added and package names corrected" />
     <MESSAGE value="Data Queries modified" />
     <MESSAGE value="Properties added to application.properties file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Properties added to application.properties file" />
+    <MESSAGE value="Query methods added for Department and Region" />
+    <option name="LAST_COMMIT_MESSAGE" value="Query methods added for Department and Region" />
   </component>
 </project>
