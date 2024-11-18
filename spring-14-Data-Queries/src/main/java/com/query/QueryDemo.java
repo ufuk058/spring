@@ -88,18 +88,21 @@ public class QueryDemo implements CommandLineRunner {
 //        System.out.println("\n\n\n\n");
 
 
-        System.out.println("#####  Courses  ####");
-       // System.out.println("All Courses with Spring Category: "+ courseRepository.findByCategory("Spring"));
-        System.out.println("\n\n\n");
-        System.out.println("All Courses with Spring Category Asc Order"+ courseRepository.findByCategoryOrderByName("Spring"));
-        System.out.println("\n\n\n");
-        System.out.println("All category Count: "+courseRepository.countByIdIsNotNull());
-        System.out.println("If the course exist with name :"+courseRepository.existsByName("Spring Boot Application Development"));
-        System.out.println("Count courses by given name :"+courseRepository.countByCategory("Rapid Spring Boot Application Development"));
-        System.out.println("\n\n\n");
-        System.out.println("Find Courses name starts with given string: "+courseRepository.findByNameStartsWith("Rapid"));
-        System.out.println("\n\n\n");
+//        System.out.println("#####  Courses  ####");
+//       // System.out.println("All Courses with Spring Category: "+ courseRepository.findByCategory("Spring"));
+//        System.out.println("\n\n\n");
+//        System.out.println("All Courses with Spring Category Asc Order"+ courseRepository.findByCategoryOrderByName("Spring"));
+//        System.out.println("\n\n\n");
+//        System.out.println("All category Count: "+courseRepository.countByIdIsNotNull());
+//        System.out.println("If the course exist with name :"+courseRepository.existsByName("Spring Boot Application Development"));
+//        System.out.println("Count courses by given name :"+courseRepository.countByCategory("Rapid Spring Boot Application Development"));
+//        System.out.println("\n\n\n");
+//        System.out.println("Find Courses name starts with given string: "+courseRepository.findByNameStartsWith("Rapid"));
+//        System.out.println("\n\n\n");
 
-
+        ///##### JPQL Queries #########
+        System.out.println("Employee Salary ByJPQL: "+employeeRepository.getEmployeeSalary());
+        //System.out.println("Retrieve all employees: \n\n"+employeeRepository.retrieveAllEmployees());
+        System.out.println("amcnee1@google.es Employee Detail: "+ employeeRepository.retrieveEmployeeDetail());
     }
 }

@@ -1,9 +1,7 @@
 package com.query.repository;
 
 import com.query.entity.Course;
-import jakarta.transaction.Transactional;
 import org.springframework.data.jpa.repository.JpaRepository;
-
 import java.util.List;
 import java.util.stream.Stream;
 
@@ -26,8 +24,5 @@ public interface CourseRepository extends JpaRepository<Course, Long> {
     List<Course> findByNameStartsWith(String substring);
 
     /// Display all courses by category and returns a stream
-
-
-    @Transactional
     Stream<Course> streamAllByCategory(String category);
 }

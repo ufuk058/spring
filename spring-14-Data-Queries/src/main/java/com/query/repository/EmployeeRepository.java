@@ -2,6 +2,7 @@ package com.query.repository;
 
 import com.query.entity.Employee;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
 
 import java.time.LocalDate;
 import java.util.List;
@@ -63,6 +64,18 @@ public interface EmployeeRepository extends JpaRepository<Employee, Integer> {
 
     //Display count of Employees Working from Canada
     Integer countByRegionCountry(String country);
+
+
+    /// ##### JPQL Queries ########
+    @Query("SELECT e.salary FROM Employee e Where e.email='amcnee1@google.es'")
+    Integer getEmployeeSalary();
+
+    @Query("SELECT e FROM Employee e")
+    List<Employee> retrieveAllEmployees();
+
+    @Query("Select e from Employee e where e.email='amcnee1@google.es'")
+    Employee retrieveEmployeeDetail();
+
 
 
 
