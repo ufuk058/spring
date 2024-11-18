@@ -1,10 +1,13 @@
 package com.query;
 
+import com.query.repository.CourseRepository;
 import com.query.repository.DepartmentRepository;
 import com.query.repository.EmployeeRepository;
 import com.query.repository.RegionRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
+
+import java.util.stream.Collectors;
 
 @Component
 public class QueryDemo implements CommandLineRunner {
@@ -12,16 +15,18 @@ public class QueryDemo implements CommandLineRunner {
     private final RegionRepository regionRepository;
     private final DepartmentRepository departmentRepository;
     private final EmployeeRepository employeeRepository;
+    private final CourseRepository courseRepository;
 
-    public QueryDemo(RegionRepository regionRepository, DepartmentRepository departmentRepository, EmployeeRepository employeeRepository) {
+    public QueryDemo(RegionRepository regionRepository, DepartmentRepository departmentRepository, EmployeeRepository employeeRepository, CourseRepository courseRepository) {
         this.regionRepository = regionRepository;
         this.departmentRepository = departmentRepository;
         this.employeeRepository = employeeRepository;
+        this.courseRepository = courseRepository;
     }
 
     @Override
     public void run(String... args) throws Exception {
-        System.out.println("\n\n\n\n\n");
+//        System.out.println("\n\n\n\n\n");
         /*System.out.println("regionRepository.findByCountry(\"Canada\") = " + regionRepository.findByCountry("Canada"));
         System.out.println("\n\n");
         System.out.println("regionRepository.getByCountry(\"Asia\") = " + regionRepository.getByCountry("Asia"));
@@ -72,14 +77,29 @@ public class QueryDemo implements CommandLineRunner {
 //        System.out.println("Employee Count of null email: "+ employeeRepository.countByEmailIsNull());
 
 
-        System.out.println("#### JOINS ######");
+//        System.out.println("#### JOINS ######");
 
 //        System.out.println("All Employees working in Health division: "+ employeeRepository.findByDepartmentDivision("Health"));
 //        System.out.println("\n\n");
 //        System.out.println("Employees from Canada: "+ employeeRepository.findByRegionCountry("Canada"));
 //        System.out.println("Based on Region Name 'Northeast': "+ employeeRepository.findByRegionRegion("Northeast"));
-        System.out.println("Number of Employee working from Canada: "+ employeeRepository.countByRegionCountry("United States"));
+//        System.out.println("Number of Employee working from Canada: "+ employeeRepository.countByRegionCountry("United States"));
+//
+//        System.out.println("\n\n\n\n");
 
-        System.out.println("\n\n\n\n");
+
+        System.out.println("#####  Courses  ####");
+       // System.out.println("All Courses with Spring Category: "+ courseRepository.findByCategory("Spring"));
+        System.out.println("\n\n\n");
+        System.out.println("All Courses with Spring Category Asc Order"+ courseRepository.findByCategoryOrderByName("Spring"));
+        System.out.println("\n\n\n");
+        System.out.println("All category Count: "+courseRepository.countByIdIsNotNull());
+        System.out.println("If the course exist with name :"+courseRepository.existsByName("Spring Boot Application Development"));
+        System.out.println("Count courses by given name :"+courseRepository.countByCategory("Rapid Spring Boot Application Development"));
+        System.out.println("\n\n\n");
+        System.out.println("Find Courses name starts with given string: "+courseRepository.findByNameStartsWith("Rapid"));
+        System.out.println("\n\n\n");
+
+
     }
 }
