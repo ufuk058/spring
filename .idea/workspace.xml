@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c218e48-f77e-46a0-98d4-a6ae7a88baff" name="Changes" comment="JPQL custom queries named Parameters with @Param annotation">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="4c218e48-f77e-46a0-98d4-a6ae7a88baff" name="Changes" comment="JPQL custom queries with Multiple parameters with IN keyword">
       <change beforePath="$PROJECT_DIR$/spring-14-Data-Queries/src/main/java/com/query/QueryDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-14-Data-Queries/src/main/java/com/query/QueryDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-14-Data-Queries/src/main/java/com/query/repository/DepartmentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-14-Data-Queries/src/main/java/com/query/repository/DepartmentRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-14-Data-Queries/src/main/java/com/query/repository/EmployeeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-14-Data-Queries/src/main/java/com/query/repository/EmployeeRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -279,7 +277,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732014800750</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="JPQL custom queries with Multiple parameters with IN keyword">
+      <option name="closed" value="true" />
+      <created>1732019716218</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1732019716218</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -305,6 +311,7 @@
     <MESSAGE value="Join Queries Created in EmployeeRepository" />
     <MESSAGE value="Query annotation with sql queries by using JPQL with independent method names" />
     <MESSAGE value="JPQL custom queries with Positional Parameter added" />
-    <option name="LAST_COMMIT_MESSAGE" value="JPQL custom queries with Positional Parameter added" />
+    <MESSAGE value="JPQL custom queries with Multiple parameters with IN keyword" />
+    <option name="LAST_COMMIT_MESSAGE" value="JPQL custom queries with Multiple parameters with IN keyword" />
   </component>
 </project>

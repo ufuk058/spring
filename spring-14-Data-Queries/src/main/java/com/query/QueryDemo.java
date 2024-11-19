@@ -130,8 +130,12 @@ public class QueryDemo implements CommandLineRunner {
 //        System.out.println("Departments with multiple divisions: "+
 //                departmentRepository.retrieveDepartmentByDivision("Fashion","Health","Entertainment"));
 
-        System.out.println("Multiple divisions: "+
-                departmentRepository.retrieveDepartmentByMultipleDivisions(new ArrayList<>(Arrays.asList("Fashion","Health","Electronics","Entertainment"))));
+//        System.out.println("Multiple divisions: "+
+//                departmentRepository.retrieveDepartmentByMultipleDivisions(new ArrayList<>(Arrays.asList("Fashion","Health","Electronics","Entertainment"))));
+
+        ///#### Native Sql Queries
+        System.out.println("Native Query for Salary :"+employeeRepository.retrieveEmployeeSalaryNative(86895));
+
 
 
 

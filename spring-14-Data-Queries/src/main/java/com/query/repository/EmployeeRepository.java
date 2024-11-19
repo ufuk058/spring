@@ -143,6 +143,11 @@ public interface EmployeeRepository extends JpaRepository<Employee, Integer> {
     List<Employee> retrieveEmployeeByCountry(@Param("country") String country);
 
 
+    /// ######   Native Sql Queries ####
+    @Query(value = "Select * from Employees where salary=:salary",nativeQuery = true)
+    List<Employee> retrieveEmployeeSalaryNative(@Param("salary")int salary);
+    ///this query retrieve data from postgres table, not the Java entity.
+    /// If the database name changes in the future in any chance native query will not work
 
 
 }
