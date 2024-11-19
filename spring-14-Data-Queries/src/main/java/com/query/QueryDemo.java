@@ -8,6 +8,8 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.stream.Collectors;
 
 @Component
@@ -117,8 +119,19 @@ public class QueryDemo implements CommandLineRunner {
 //        System.out.println("Salary DEsc Order: "+ employeeRepository.retrieveEmployeesDescOrderBySalary());
 
         /// Queries With the named parameters
-        System.out.println("Employee salary : "+employeeRepository.retrieveEmployeeSalary(112796));
-        System.out.println("Name or Salary: "+ employeeRepository.retrieveFirstNameOrSalary(112796,"Thorvald"));
+//        System.out.println("Employee salary : "+employeeRepository.retrieveEmployeeSalary(112796));
+//        System.out.println("Name or Salary: "+ employeeRepository.retrieveFirstNameOrSalary(112796,"Thorvald"));
+        /// Join Queries
+       // System.out.println("Employees by specific division: "+ employeeRepository.retrieveEmployeeByDivision("Health"));
+//        System.out.println("Employee by Country: "+employeeRepository.retrieveEmployeeByCountry("Canada"));
+
+        /// ### for Multiple Inputs ####
+
+//        System.out.println("Departments with multiple divisions: "+
+//                departmentRepository.retrieveDepartmentByDivision("Fashion","Health","Entertainment"));
+
+        System.out.println("Multiple divisions: "+
+                departmentRepository.retrieveDepartmentByMultipleDivisions(new ArrayList<>(Arrays.asList("Fashion","Health","Electronics","Entertainment"))));
 
 
 
