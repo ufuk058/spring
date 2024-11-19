@@ -113,8 +113,12 @@ public class QueryDemo implements CommandLineRunner {
 //        System.out.println("Employees hired after certain date: "+
 //                employeeRepository.retrieveEmployeesHireDateGreaterThan(LocalDate.of(2005,01,01)));
 //        System.out.println("Employees with null email: "+ employeeRepository.retrieveEmployeesEmailIsNull());
-        System.out.println("Not null email Employee Count: "+ employeeRepository.getNotNullEmailEmployeeCount());
-        System.out.println("Salary DEsc Order: "+ employeeRepository.retrieveEmployeesDescOrderBySalary());
+//        System.out.println("Not null email Employee Count: "+ employeeRepository.getNotNullEmailEmployeeCount());
+//        System.out.println("Salary DEsc Order: "+ employeeRepository.retrieveEmployeesDescOrderBySalary());
+
+        /// Queries With the named parameters
+        System.out.println("Employee salary : "+employeeRepository.retrieveEmployeeSalary(112796));
+        System.out.println("Name or Salary: "+ employeeRepository.retrieveFirstNameOrSalary(112796,"Thorvald"));
 
 
 

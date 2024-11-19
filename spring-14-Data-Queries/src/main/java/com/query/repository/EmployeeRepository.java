@@ -3,6 +3,7 @@ package com.query.repository;
 import com.query.entity.Employee;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
 
 import java.time.LocalDate;
 import java.util.List;
@@ -122,6 +123,15 @@ public interface EmployeeRepository extends JpaRepository<Employee, Integer> {
     ///Sorting Asc
     @Query("Select e from Employee e Order By e.salary DESC")
     List<Employee> retrieveEmployeesDescOrderBySalary();
+
+    /// ########   Queries with Names Parameters ########
+
+    /// Named Parameter
+    @Query("Select e from Employee e where e.salary  = :salary ")
+    List<Employee> retrieveEmployeeSalary(@Param("salary")int salary);
+
+    @Query("Select e from Employee e where e.firstName=:name OR e.salary=:salary")
+    List<Employee> retrieveFirstNameOrSalary(@Param("salary") int salary, @Param("name") String name);
 
 
 }
