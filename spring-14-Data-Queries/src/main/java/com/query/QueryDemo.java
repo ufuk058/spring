@@ -101,8 +101,16 @@ public class QueryDemo implements CommandLineRunner {
 //        System.out.println("\n\n\n");
 
         ///##### JPQL Queries #########
-        System.out.println("Employee Salary ByJPQL: "+employeeRepository.getEmployeeSalary());
-        //System.out.println("Retrieve all employees: \n\n"+employeeRepository.retrieveAllEmployees());
-        System.out.println("amcnee1@google.es Employee Detail: "+ employeeRepository.retrieveEmployeeDetail());
+//        System.out.println("Employee Salary ByJPQL: "+employeeRepository.getEmployeeSalary());
+//        //System.out.println("Retrieve all employees: \n\n"+employeeRepository.retrieveAllEmployees());
+//        System.out.println("amcnee1@google.es Employee Detail: "+ employeeRepository.retrieveEmployeeDetail());
+//        System.out.println("Find the employee with salary is Equal 86895 :"+ employeeRepository.retrieveEmployeeSalaryEqual(86895));
+//        System.out.println("FirstName Like given firstName: "+ employeeRepository.retrieveEmployeeFirstNameLike("James"));
+//        System.out.println("Salary Less Than: "+employeeRepository.retrieveEmployeeSalaryLessThan(30000));
+//        System.out.println("First names with salary greater than 160000: "+ employeeRepository.retrieveEmployeeFirstNamesGreaterThanSalary(160000));
+        System.out.println("Salaries Between: "+ employeeRepository.retrieveEmployeeSalaryBetween(100000, 105000));
+
+
+
     }
 }
