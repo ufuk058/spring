@@ -133,5 +133,16 @@ public interface EmployeeRepository extends JpaRepository<Employee, Integer> {
     @Query("Select e from Employee e where e.firstName=:name OR e.salary=:salary")
     List<Employee> retrieveFirstNameOrSalary(@Param("salary") int salary, @Param("name") String name);
 
+    /// Display all employees who are working in division  "Health"
+    // @Query("Select e from Employee e where e.department.division=?1") method parameter only String division
+    @Query("Select e from Employee e where e.department.division = :division")
+    List<Employee> retrieveEmployeeByDivision(@Param("division") String division);
+
+    /// Display all employees who are working in country "Canada"
+    @Query("Select e from Employee e where e.region.country=:country")
+    List<Employee> retrieveEmployeeByCountry(@Param("country") String country);
+
+
+
 
 }
