@@ -102,4 +102,26 @@ public interface EmployeeRepository extends JpaRepository<Employee, Integer> {
     List<Employee> retrieveEmployeeSalaryBetween(int salaryStart, int salaryEnd);
 
 
+    /// Employees with specific hire date
+    @Query("Select e from Employee e where e.hireDate >?1 ")
+    List<Employee> retrieveEmployeesHireDateGreaterThan( LocalDate hireDate);
+
+    //Employees with email is null
+    @Query("Select e from Employee e where e.email IS NULL")
+    List<Employee> retrieveEmployeesEmailIsNull();
+
+    //Employees with email is not null
+    @Query("Select e from Employee e where e.email IS NOT NULL")
+    List<Employee> retrieveEmployeesEmailIsNotNull();
+
+    /// Number of Employees with not null email
+    @Query("Select Count(e.email) from Employee e where e.email IS NOT NULL")
+    Integer getNotNullEmailEmployeeCount();
+
+
+    ///Sorting Asc
+    @Query("Select e from Employee e Order By e.salary DESC")
+    List<Employee> retrieveEmployeesDescOrderBySalary();
+
+
 }

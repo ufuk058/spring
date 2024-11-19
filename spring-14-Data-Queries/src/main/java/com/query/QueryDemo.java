@@ -7,6 +7,7 @@ import com.query.repository.RegionRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
+import java.time.LocalDate;
 import java.util.stream.Collectors;
 
 @Component
@@ -108,7 +109,12 @@ public class QueryDemo implements CommandLineRunner {
 //        System.out.println("FirstName Like given firstName: "+ employeeRepository.retrieveEmployeeFirstNameLike("James"));
 //        System.out.println("Salary Less Than: "+employeeRepository.retrieveEmployeeSalaryLessThan(30000));
 //        System.out.println("First names with salary greater than 160000: "+ employeeRepository.retrieveEmployeeFirstNamesGreaterThanSalary(160000));
-        System.out.println("Salaries Between: "+ employeeRepository.retrieveEmployeeSalaryBetween(100000, 105000));
+//        System.out.println("Salaries Between: "+ employeeRepository.retrieveEmployeeSalaryBetween(100000, 105000));
+//        System.out.println("Employees hired after certain date: "+
+//                employeeRepository.retrieveEmployeesHireDateGreaterThan(LocalDate.of(2005,01,01)));
+//        System.out.println("Employees with null email: "+ employeeRepository.retrieveEmployeesEmailIsNull());
+        System.out.println("Not null email Employee Count: "+ employeeRepository.getNotNullEmailEmployeeCount());
+        System.out.println("Salary DEsc Order: "+ employeeRepository.retrieveEmployeesDescOrderBySalary());
 
 
 
